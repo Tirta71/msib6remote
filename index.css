@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-image: url("../latihan5/image/header.jpg");
+  background-repeat: no-repeat;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-position: center;
+  background-size: cover;
+}
+nav {
+  background-color: black;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  transition: all 0.5s;
+}
+nav a:hover {
+  color: tomato;
+}
+
+.container-content {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem;
+  justify-content: space-between;
+}
+.container-content h2 {
+  text-align: center;
+}
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.footer-content {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .container-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}

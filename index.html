@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../latihan5/index.css" />
+    <title>Latihan 5</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Header</h1>
+        <p>ini adalah page header bagian atas</p>
+      </div>
+
+      <nav>
+        <a href="#" onclick="showContent('content1')">Link 1</a>
+        <a href="#" onclick="showContent('content2')">Link 2</a>
+        <a href="#" onclick="showContent('content3')">Link 3</a>
+      </nav>
+
+      <div class="container-content">
+        <div class="side">
+          <h2>Side Left</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
+            aliquid.
+          </p>
+        </div>
+        <div class="main-content" id="mainContent">
+          <h2>Main Content</h2>
+          <p>Pilih salah satu link di atas untuk melihat konten.</p>
+        </div>
+        <div class="side-right">
+          <h2>Side Right</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, iste.
+          </p>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-content">
+          <p>&copy; 2024 Latihan 5. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      function showContent(contentId) {
+        var contents = {
+          content1: "<h2>Content 1</h2><p>Isi konten dari Link 1.</p>",
+          content2: "<h2>Content 2</h2><p>Isi konten dari Link 2.</p>",
+          content3: "<h2>Content 3</h2><p>Isi konten dari Link 3.</p>",
+        };
+        document.getElementById("mainContent").innerHTML = contents[contentId];
+      }
+    </script>
+  </body>
+</html>
